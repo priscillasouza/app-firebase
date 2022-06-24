@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/drawable/background_button.xml" value="0.1" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/drawable/background_button_blue.xml" value="0.218" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/drawable/background_button_green.xml" value="0.218" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/drawable/background_button_signin.xml" value="0.218" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/drawable/background_button_signin_google_face.xml" value="0.1" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_profile.xml" value="0.3171875" />
-        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_register_account.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/Users/prisc/Documents/FirebaseApp/app/src/main/res/layout/activity_register_account.xml" value="0.1" />
       </map>
     </option>
   </component>
