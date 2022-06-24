@@ -16,6 +16,13 @@ class Profile : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbarProfile)
+
+        getLoginGoogle()
+        getRegisterUser()
+    }
+
+    private fun getLoginGoogle() {
         val name = binding.textViewName
         val email = binding.textViewEmail
 
@@ -30,7 +37,21 @@ class Profile : AppCompatActivity() {
                 val intent = Intent(applicationContext, MainActivity::class.java)
                 startActivity(intent)
             }
+        }
+    }
 
+    private fun getRegisterUser() {
+        val name = intent.getStringExtra("EXTRA_NAME")
+        val city = intent.getStringExtra("EXTRA_CITY")
+        val country = intent.getStringExtra("EXTRA_COUNTRY")
+
+        val userDescription =
+            "$name, mora em $city, que fica no(a) $country"
+        binding.textViewDescriptionUser.text = userDescription
+
+        binding.buttonLogout.setOnClickListener {
+            val intent = Intent(applicationContext, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

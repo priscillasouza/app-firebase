@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="24dp"
+    android:orientation="vertical"
+    tools:context=".RegisterAccountActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIconTint="@color/white"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textviewTitleSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/text_title_signup"
+        android:textColor="#33D5EC"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewSubtitleSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_subtitle_signup" />
+
+    <EditText
+        android:id="@+id/editTextNameSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:hint="@string/text_hint_name_register"
+        android:inputType="textAutoComplete" />
+
+    <EditText
+        android:id="@+id/editTextEmailSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_hint_email_register"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_hint_password_register"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editTextCitySignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_hint_city_register"
+        android:inputType="textAutoComplete" />
+
+    <EditText
+        android:id="@+id/editTextCountrySignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/text_hint_country_register"
+        android:inputType="textAutoComplete" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_button_blue"
+        android:text="@string/text_button_register"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</LinearLayout>
