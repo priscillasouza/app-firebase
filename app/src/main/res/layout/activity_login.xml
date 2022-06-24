@@ -25,14 +25,12 @@
 
     <TextView
         android:id="@+id/textviewTitleLogin"
+        style="@style/Text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="120dp"
-        android:text="@string/text_title_login"
-        android:textColor="#33D5EC"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:text="@string/text_title_login" />
 
     <TextView
         android:id="@+id/textviewSubtitleLogin"
@@ -71,25 +69,23 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignIn"
+        style="@style/Text_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:background="@drawable/background_button_blue"
         android:elevation="4dp"
-        android:text="@string/text_button_access_simple_login"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
+        android:text="@string/text_button_access_simple_login" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignInGoogle"
+        style="@style/Text_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="@drawable/background_button_green"
         android:elevation="4dp"
-        android:text="@string/text_button_access_with_a_google"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
+        android:text="@string/text_button_access_with_a_google" />
 </androidx.appcompat.widget.LinearLayoutCompat>

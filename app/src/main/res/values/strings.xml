@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">FirebaseApp</string>
+    <string name="app_name">Lets Move</string>
+    <string name="default_web_client_id_">"382093904051-ojkkg4ck9o7k1phsp2d6k7ih2g60c1of.apps.googleusercontent.com"</string>
+
+    <string name="facebook_app_id">393465962728955</string>
+    <string name="fb_login_protocol_scheme">7088a8eec1b139442d69cb9da74c2ef4</string>
+    <string name="facebook_client_token">2a40d792273e01019721407a8fdee5b0</string>
+    <string name="text_title_app">Let\'s Move</string>
+    <string name="text_subtitle_app">Olá, seja bem vindo(a)</string>
+    <string name="text_description_app">Acesse a sua conta ou registre-se</string>
+    <string name="text_button_enter_login">Login</string>
+    <string name="text_button_create_account">Criar conta</string>
+    <string name="text_button_access_with_a_google">Acessar com a google</string>
+    <string name="text_button_access_simple_login">Entrar</string>
+    <string name="text_forgot_password">Esqueceu a senha?</string>
+    <string name="text_hint_password_login">Senha</string>
+    <string name="text_hint_email_login">Email</string>
+    <string name="text_subtitle_enter_to_continue">Entre para continuar</string>
+    <string name="text_title_login">Login</string>
+    <string name="text_title_signup">Signup</string>
+    <string name="text_subtitle_signup">Registre a sua conta</string>
+    <string name="text_hint_name_register">Nome</string>
+    <string name="text_hint_email_register">Email</string>
+    <string name="text_hint_password_register">Senha</string>
+    <string name="text_hint_city_register">Cidade</string>
+    <string name="text_hint_country_register">País</string>
+    <string name="text_button_register">Registrar</string>
+    <string name="text_view_name_user_google">Nome</string>
+    <string name="text_view_email_user_google">Email</string>
+    <string name="text_view_description_user">Descrição do usuário</string>
+    <string name="stext_button_close">Sair</string>
 </resources>

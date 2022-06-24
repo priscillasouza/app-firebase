@@ -26,14 +26,12 @@
 
     <TextView
         android:id="@+id/textviewTitleSignUp"
+        style="@style/Text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="120dp"
-        android:text="@string/text_title_signup"
-        android:textColor="#33D5EC"
-        android:textSize="32sp"
-        android:textStyle="bold" />
+        android:text="@string/text_title_signup" />
 
     <TextView
         android:id="@+id/textviewSubtitleSignUp"
@@ -90,13 +88,13 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignUp"
+        style="@style/Text_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="64dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/background_button_blue"
-        android:text="@string/text_button_register"
-        android:textAllCaps="false"
-        android:textColor="@color/white" />
+        android:elevation="4dp"
+        android:text="@string/text_button_register" />
 </LinearLayout>
