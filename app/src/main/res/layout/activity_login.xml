@@ -27,12 +27,12 @@
         android:id="@+id/textviewTitleLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:textColor="#33D5EC"
-        android:textStyle="bold"
-        android:textSize="32sp"
         android:layout_marginHorizontal="16dp"
-        android:text="Login" />
+        android:layout_marginTop="120dp"
+        android:text="@string/text_title_login"
+        android:textColor="#33D5EC"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textviewSubtitleLogin"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
-        android:text="Entre para continuar" />
+        android:text="@string/text_subtitle_enter_to_continue" />
 
     <EditText
         android:id="@+id/editTextEmailLogin"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp"
-        android:hint="Email"
+        android:hint="@string/text_hint_email_login"
         android:inputType="textAutoComplete" />
 
     <EditText
@@ -57,49 +57,39 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Senha"
-        android:inputType="textAutoComplete" />
+        android:hint="@string/text_hint_password_login"
+        android:inputType="textPassword" />
 
     <TextView
         android:id="@+id/textviewForgotPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="textEnd"
-        android:layout_marginTop="8dp"
         android:layout_marginHorizontal="16dp"
-        android:text="Esqueceu a senha?" />
+        android:layout_marginTop="8dp"
+        android:text="@string/text_forgot_password"
+        android:textAlignment="textEnd" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Entrar"
-        android:elevation="4dp"
-        android:textColor="@color/white"
-        android:background="@drawable/background_button_blue"
         android:layout_gravity="center"
-        android:textAllCaps="false" />
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background_button_blue"
+        android:elevation="4dp"
+        android:text="@string/text_button_access_simple_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSignInGoogle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acessar com a google"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:textAllCaps="false"
-        android:elevation="4dp"
-        android:textColor="@color/white"
         android:background="@drawable/background_button_green"
-        android:layout_gravity="center"/>
-
-    <com.facebook.login.widget.LoginButton
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTintMode="@drawable/background_button_blue"
-        android:backgroundTint="@color/teal_200"/>
+        android:elevation="4dp"
+        android:text="@string/text_button_access_with_a_google"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -3,6 +3,7 @@ package com.example.firebaseapp
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaseapp.databinding.ActivityLoginBinding
@@ -18,11 +19,16 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 
+/*
+Obs: os trechos comentados no código são da implementação do login com o facebook como eles estavam quebrando a aplicação
+ficará para um pesquisa futura
+*/
+
+@Suppress("DEPRECATION")
 open class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
 
-    //variaveis globais
     private var mGoogleSignInClient: GoogleSignInClient? = null
     private val mSignIn = 123
     private var mAuth: FirebaseAuth? = null
@@ -39,12 +45,11 @@ open class LoginActivity : AppCompatActivity() {
         createRequest()
 
         setSupportActionBar(binding.toolbarLogin)
+        val actionBar = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
 
         auth = FirebaseAuth.getInstance()
         mAuth = FirebaseAuth.getInstance()
-
-        callbackManager = CallbackManager.Factory.create()
-        loginButton = findViewById<LoginButton>(R.id.login_button)
 
         binding.buttonSignInGoogle.setOnClickListener {
             sigInWithGoogle()
@@ -56,9 +61,13 @@ open class LoginActivity : AppCompatActivity() {
             singIn()
         }
 
+        /*
         binding.loginButton.setOnClickListener {
             facebookInit()
         }
+        callbackManager = CallbackManager.Factory.create()
+        loginButton = findViewById<LoginButton>(R.id.login_button)
+        */
     }
 
     public override fun onStart() {
@@ -67,12 +76,24 @@ open class LoginActivity : AppCompatActivity() {
         updateUI(currentUser)
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    //Login com o facebook
+    /*
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         callbackManager.onActivityResult(requestCode, resultCode, data)
     }
+    */
 
-    //Login com o facebook
     private fun facebookInit() {
         FacebookSdk.sdkInitialize(this)
         loginButton.setReadPermissions("email", "public_profile", "user_friends")
